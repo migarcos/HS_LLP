@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
-
 /**
- * A code to display  a phrase using put
+ * main -Entry point
+ * 
+ * Return:string
  */
-
 int main(void)
 {
-    puts("Programming is like building a multilingual puzzle");
-    return (0);
+	puts("Programming is like building a multilingual");
+	return (0);
 }
+
