@@ -1,11 +1,11 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 /**
-    * main - entry block
-      * @void: no argument
-        * Return: Always 0 (Success)
-	**/
+  * main - entry block
+  * @void: no argument
+  * Return: Always 0 (Success)
+  **/
 int main(void)
 {
 	int n;
@@ -24,8 +24,8 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
 	else
-	{	
+	{
 		printf("Last digit of %d is %d and is 0\n", n, l);
 	}
 	return (0);
-}i
+}
