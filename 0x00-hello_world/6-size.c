@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+
 /**
  * main - Entry point
  *
- * return: string
+ * Return: sizeof
  */
 int main(void)
 {
