@@ -16,5 +16,6 @@ int print_last_digit(int x)
 	r = x % 10; /* remainder of division */
 
 	_putchar(r + '0');
+
 	return (r);
 }
