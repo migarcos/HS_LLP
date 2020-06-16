@@ -1,9 +1,10 @@
 #include "holberton.h"
 
-/*
- *function print_alphabet lowercase
+/**
+ * print_alphabet - detect lowercase char
+ * @void cause only call teh function
  *
- *return void
+ * Return: char
  */
 void print_alphabet(void)
 {
@@ -15,5 +16,4 @@ void print_alphabet(void)
 		i++;
 	}
 	_putchar(10);
-	return;
 }

@@ -1,9 +1,10 @@
 #include "holberton.h"
 
-/*
- * function -  _islower check for lower case
+/**
+ * _islower - check for lower case
+ * @c : obtain value to evaluate
  *
- * Return 1 to lowercase, 0 other case
+ * Return: 1 to lowercase, 0 other case
  */
 int _islower(int c)
 {

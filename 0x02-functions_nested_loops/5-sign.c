@@ -1,10 +1,10 @@
 #include "holberton.h"
 
-/*
- *print_sign - print the number sign
- *@n: the parameter
+/**
+ * print_sign - print the number sign
+ * @n: the parameter
  *
- *Return: 1 or 0 or -1
+ * Return: 1 or 0 or -1
  */
 int print_sign(int n)
 {
@@ -22,5 +22,5 @@ int print_sign(int n)
 	{
 		_putchar('-');
 		return (-1);
-											}
+	}
 }

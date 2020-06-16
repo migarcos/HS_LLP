@@ -1,7 +1,8 @@
 #include "holberton.h"
 
-/*
+/**
  * print_alphabet_x10 - reuse _putchar to print
+ * @ void - only a call
  *
  *return void
  */
@@ -22,6 +23,5 @@ void print_alphabet_x10(void)
 
 		_putchar(10);
 	}
-	return;
 }
 
