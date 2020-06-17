@@ -13,8 +13,9 @@ int main(void)
 
 	printf("%ld, %ld, ", last, next);
 
-	while (counter < 48) {
-		printf("%ld, ", next+last);
+	while (counter < 48)
+	{
+		printf("%ld, ", next + last);
 
 		tmp = last;
 
