@@ -10,10 +10,11 @@
 int main(void)
 {
 	int i, a, b, sum;
-	i=0;
+
+	i = 0;
 	sum = 0;
 
-	do{
+	do {
 		a = i % 3;
 		b = i % 5;
 		if (a == 0 || b == 0)
@@ -21,7 +22,8 @@ int main(void)
 			sum = sum + i;
 		}
 		i++;
-	}while (i < 1024);
+	} while (i < 1024);
+
 	printf("%d\n", sum);
 	return (0);
 }
