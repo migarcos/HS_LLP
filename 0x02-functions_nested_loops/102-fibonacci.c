@@ -13,7 +13,7 @@ int main(void)
 
 	printf("%ld, %ld, ", last, next);
 
-	while (counter < 48)
+	while (counter < 47)
 	{
 		printf("%ld, ", next + last);
 
@@ -25,7 +25,7 @@ int main(void)
 
 		counter++;
 	}
-	printf("\n");
+	printf("%ld\n", next + last);
 
 	return (0);
 }
