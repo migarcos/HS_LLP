@@ -1,33 +1,33 @@
-#include "holberton.h"
 #include <stdio.h>
 
 /**
  * main - prints nums 1..100
  *
  *
- * Return: Fizz % 3, Buzz % 5, FizzBuuz both
+ * Return: Fizz % 3, Buzz % 5, FizzBuzz both
  */
 
 int main(void)
 {
 	int i;
 
-	for (i = 1; i < 101; i++)
+	for (i = 1; i < 100; i++)
 	{
 
 		if (i % 3 == 0 || i % 5 == 0)
 		{
 			if (i % 3 == 0 && i % 5 == 0)
-				printf("FizzBuzz ");
+				printf("FizzBuzz");
 			else if (i % 3 == 0)
-				printf("Fizz ");
+				printf("Fizz");
 			else
-				printf("Buzz ");
+				printf("Buzz");
 		}
-		else
-			printf("%d ", i);
+		else printf("%d", i);
+
+		putchar(32);
 	}
-	printf("\n");
+	printf("Buzz\n");
 
 	return (0);
 }
