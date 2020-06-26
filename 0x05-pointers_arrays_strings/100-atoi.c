@@ -19,7 +19,7 @@ int _atoi(char *s)
 			num = (num * 10) + (s[i] - '0');
 			j ++;
 		}
-		else if (j > 0  &&  s[i] < '0' && s[i] > '9')
+		else if (j > 0  &&  (s[i] < '0' && s[i] > '9'))
 			break;
 	} while (s[i] != '\0');
 
