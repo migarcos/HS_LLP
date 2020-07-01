@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * _strstr -  finds the first occurrence of the substring
- * @s: original string
- * @accept: string to verify ocurrence
+ * @haystack: original string
+ * @needle: string to verify ocurrence
  * Return: a pointer
  */
 char *_strstr(char *haystack, char *needle)
