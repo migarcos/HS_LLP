@@ -1,8 +1,9 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - square root of a number
+ * auxsqrt - root aux
  * @n: the number
+ * @i: counter
  * 
  * Return: int
  **/
@@ -15,6 +16,11 @@ int auxsqrt(int n, int i)
 	else
 		return (-1);
 }
+/**
+  * _sqrt_recursion - square root of a number
+  * @n: the number
+  * Return: int
+  **/
 
 int _sqrt_recursion(int n)
 {
