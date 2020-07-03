@@ -11,4 +11,6 @@ int auxsqrt(int n, int i);
 int is_prime_number(int n);
 int aux_is_prime(int x, int y);
 int is_palindrome(char *s);
+int _strlen_recursion(char *s);
+int helper_palindrome(char *s, int len);
 int wildcmp(char *s1, char *s2);
