@@ -4,7 +4,7 @@
  * auxsqrt - root aux
  * @n: the number
  * @i: counter
- * 
+ *
  * Return: int
  **/
 int auxsqrt(int n, int i)
@@ -12,7 +12,7 @@ int auxsqrt(int n, int i)
 	if (n == (i * i))
 		return (i);
 	else if (n > (i * i))
-             return (auxsqrt(n , i + 1));
+		return (auxsqrt(n, i + 1));
 	else
 		return (-1);
 }
