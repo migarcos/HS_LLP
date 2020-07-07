@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+
 /**
  * main - multiplies two numbers
  * @argc: argument counter
@@ -10,7 +10,7 @@
  ***/
 int main(int argc, char *argv[])
 {
-	int mult;
+	int mult, num1;
 
 	if (argc != 3)
 	{
@@ -19,7 +19,9 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		mult = atoi(argv[1]) * atoi(argv[2]);
+		num1 = atoi(argv[2]);
+
+		mult = atoi(argv[1]) * num1;
 
 		printf("%d \n", mult);
 
