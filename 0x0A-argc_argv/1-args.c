@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
- * main - prints qty args 
+ * main - prints num args passed
  * @argc: argument counter
  * @argv: argument with values
  *
