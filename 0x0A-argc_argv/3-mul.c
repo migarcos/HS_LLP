@@ -14,14 +14,10 @@ int main(int argc, char *argv[])
 		printf("ERROR \n");
 		return (1);
 	}
-	else
-	{
-		int mult = atoi(argv[1]);
 
-		mult = mult * atoi(argv[2]);
+	int mult = atoi(argv[1]) * atoi(argv[2]);
 
-		printf("%d \n", mult);
-	}
+	printf("%d \n", mult);
 
 	return (0);
 }
