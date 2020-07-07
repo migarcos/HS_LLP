@@ -2,29 +2,25 @@
 #include <stdlib.h>
 
 /**
- * main - multiplies two numbers
- * @argc: argument counter
- * @argv: argument with values
+ * main - print the result of the multiplication
+ * @argc: count
+ * @argv: vector
  *
- * Return: integer
- ***/
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
-	int mult, num1;
+	int product;
 
+	if (argc == 3)
+	{
+		product =  atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", product);
+	}
 	if (argc != 3)
 	{
-		printf("ERROR \n");
+		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		num1 = atoi(argv[2]);
-
-		mult = atoi(argv[1]) * num1;
-
-		printf("%d \n", mult);
-
-		return (0);
-	}
+	return (0);
 }
