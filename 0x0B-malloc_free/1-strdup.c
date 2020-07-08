@@ -5,7 +5,7 @@
  * @str: final array position
  *
  * Return: returns a pointer
- ****/
+ **/
 
 char *_strdup(char *str)
 {
@@ -15,10 +15,10 @@ char *_strdup(char *str)
 	if (!str) /* (str == NULL)*/
 		return (NULL);
 
-	while (str[size] != '\0') /* (*str) */
+	while (str[size] != '\0') /*  (*str) not work  */
 		size++;
 
-	ptr = malloc(sizeof(char) * size);
+	ptr = malloc(sizeof(char) * (size + 1));
 
 	if (!ptr)
 		return (NULL);
