@@ -1,37 +1,41 @@
-#include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
+
 /**
- * str_concat - concatenates two strings
- * @s1: fst string
- * @s2: snd string
- * Return: pointer to n_a_s s1+s2
- **/
+ *str_concat - returns a pointer that contains a string
+ * that is a combination of two strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: pointer to the concatenated string
+ */
 
 char *str_concat(char *s1, char *s2)
 {
-	char *ptr;
-	unsigned int size1 = 0, size2 = 0, i = 0;
+	char *str, *emp;
+	int i, j, k;
 
-	if (!s1 || !s2)
+	emp = "";
+	if (s1 == NULL)
+		s1 = emp;
+	if (s2 == NULL)
+		s2 = emp;
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+	j++;
+	str = malloc((i + j) * sizeof(*str));
+	if (str == NULL)
 		return (NULL);
-	while (s1)
-		size1++;
-	while (s2)
-		size2++;
-
-	ptr = malloc(sizeof(char) * (size1 + size2 + 1));
-
-	if (!ptr)
-		return (NULL);
-	while (i < size1)
+	for (k = 0; s1[k] != '\0'; k++)
+		str[k] = s1[k];
+	j = 0;
+	while (s2[j] != '\0')
 	{
-		ptr[i] = s1[i];
-		i++;
+		str[k] = s2[j];
+		j++;
+		k++;
 	}
-	while (i < (size1 + size2))
-	{
-		ptr[i] = s2[i - size1];
-		i++;
-	}
-	return (ptr);
+	str[k] = '\0';
+	return (str);
 }
