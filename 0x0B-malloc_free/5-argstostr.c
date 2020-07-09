@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 {
 	*ptr;
 
-	if (!char || ac == NULL)
+	if (!av || ac == NULL)
 		return(NULL);
 
 	return (NULL);
