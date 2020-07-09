@@ -1,43 +1,47 @@
-#include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
- * argstostr - concatenates all the arguments of your program
- * @ac: size
- * @av: char matrix
- * Return: pointer to a matrix
+ *argstostr - concatenates all the arguements of your program
+ *@ac: arguement count
+ *@av: argument values
+ * Return: pointer to string
  */
 
 char *argstostr(int ac, char **av)
 {
-	char *ptr;
-	int i, j, k = 0, lenght = 0;
+	char *str, *begin;
+	int i, j, count;
 
-	if (av == NULL || ac == NULL)
-		return(NULL);
-
-	for (i = 0; i < ac; i++)
-	{
-		for (j = 0; av[i][j]; j++)
-		{
-			length++;
-		}
-	}
-
-	ptr = malloc((length + 1 + ac) * sizeof(char));
-
-	if (ptr == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
-			ptr[k] == av[i][j];
-
-		ptr[k++] = '\n';
+		j = 0;
+		while (av[i][j] != '\0')
+		{
+			j++;
+			count++;
+		}
+		count++;
 	}
-	ptr[k] = '\0';
-
-	return (ptr);
-
+	count++;
+	str = malloc(count * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	begin = str;
+	for (i = 0; i < ac; i++)
+	{
+		j = 0;
+		while (av[i][j] != '\0')
+		{
+			*str = av[i][j];
+			j++;
+			str++;
+		}
+		*str = '\n';
+		str++;
+	}
+	return (begin);
 }
