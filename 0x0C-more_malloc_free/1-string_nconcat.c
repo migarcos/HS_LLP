@@ -29,15 +29,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (*s1)
 	{
-		*concat = *s1
+		*concat = *s1;
 		s1++;
 		concat++;
 	}
 	while (i <= size)
 	{
-		*concat = *s2
+		*concat = *s2;
 		s2++;
-		concat++
+		concat++;
 	}
 	*concat = '\0';
 
