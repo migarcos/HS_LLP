@@ -1,46 +1,41 @@
-#include "holberton.h"
-#include <stdlib.h>
+#include"holberton.h"
+#include<stdlib.h>
 
 /**
- * string_nconcat - concats two strings, snd to n position
- * @s1: fst string
- * @s2: snd string
- * @n: last position to s2
- * Return: pointer to str concat
- **/
+ * string_nconcat - concatenates two strings
+ * @s1: string to pass to a memory location
+ * @s2: string to concatenate to string 1
+ * @n: number of bytes to concatenate of string s2
+ * Return: A pointer to the asigned memory
+ */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
-	int size = 0, i = 0;
+	unsigned int i, m;
 
-	if (s1 == NULL)
+
+	if (s1 == '\0')
 		s1 = "";
-	if (s2 == NULL)
+	if (s2 == '\0')
 		s2 = "";
-	while (*s1)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		s1++;
-		size++;
 	}
 
-	concat = malloc((n + 1 + size) * sizeof(char));
+	concat = malloc(sizeof(char) * (i + n + 1));
 	if (concat == NULL)
 		return (NULL);
 
-	while (*s1)
+	for (m = 0; m < i; m++)
 	{
-		*concat = *s1;
-		s1++;
-		concat++;
-	}
-	while (i <= size)
-	{
-		*concat = *s2;
-		s2++;
-		concat++;
-	}
-	*concat = '\0';
+		concat[m] = s1[m];
 
+	}
+	for (; m < (i + n) && s2[m - i] != '\0'; m++)
+	{
+		concat[m] = s2[m - i];
+	}
+	concat[m] = '\0';
 	return (concat);
-
 }
